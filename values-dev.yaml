@@ -1,0 +1,19 @@
+# Default values for goobar.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+redis:
+  enabled: true
+  auth:
+    enabled: true
+    password: "password"
+  diagnosticMode:
+    ## @param diagnosticMode.enabled Enable diagnostic mode (all probes will be disabled and the command will be overridden)
+    ##
+    enabled: true
+
+rabbitmq:
+  enabled: false
+
+postgresql:
+  enabled: false
